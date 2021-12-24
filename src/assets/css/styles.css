@@ -1,0 +1,268 @@
+html,
+body {
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.right {
+  float: right !important;
+  margin: 1em 2em 1em 1em;
+}
+
+.recommentTitle {
+  size: 15px;
+  color: white;
+  float: left !important;
+  width: 100%;
+  font-size: 200%;
+}
+
+/* responsive */
+/*pages*/
+/*variables*/
+/* component */
+.leftmenu {
+  background-color: black;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+}
+.leftmenu__submenu {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+  text-align: center;
+  color: #DFD3C3;
+  font-weight: bold;
+}
+.leftmenu__submenu:hover {
+  color: white;
+}
+.leftmenu__submenu:focus {
+  background-color: bisque;
+}
+.leftmenu__submenu__active {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+  border-radius: 5px;
+  text-align: center;
+  color: #DFD3C3;
+  font-weight: bold;
+  background-color: #282828;
+  color: white;
+}
+.leftmenu__submenu__active:focus {
+  background-color: bisque;
+}
+.leftmenu__image {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.leftmenu__icon {
+  height: 1em;
+}
+
+.mainContent {
+  background-color: #161616;
+  padding: 0;
+  color: white;
+  z-index: 0;
+  position: absolute;
+  right: 0;
+}
+
+.headerNonLogin {
+  background-color: #101010 !important;
+  height: 4em;
+  width: 100%;
+  float: right;
+}
+
+.card {
+  padding: 1em 1em 1em 1em;
+  width: 11.5%;
+  min-width: 160px;
+  background-color: #121212;
+  float: left;
+  height: 15em;
+  margin: 0.5%;
+}
+.card:hover {
+  background-color: #282828;
+  position: relative;
+}
+.card:hover .btn-circle {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  border-radius: 50px;
+  background-color: transparent;
+  background-color: #2ee59d;
+  margin: 0;
+  position: absolute;
+  top: 43%;
+  right: 20%;
+}
+.card:not(:hover) .btn-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: transparent;
+  background-color: #2ee59d;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  display: none;
+}
+.card__image {
+  width: 90%;
+  margin-bottom: 1em;
+}
+.card__description {
+  color: #B3B3B3;
+  font-size: 90%;
+  line-height: 90%;
+  margin-top: 0.5em;
+}
+
+.input-large {
+  min-width: 500px;
+  min-height: 50px;
+  margin: 0 2em 2em 2em;
+}
+
+.form-container {
+  min-width: 500px;
+}
+.form-container__label {
+  font-size: 80%;
+  margin-bottom: 0.5em;
+}
+
+.btn__primary {
+  padding: 1em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.btn__primary:hover {
+  background-color: #2ee59d;
+  color: #fff;
+  transform: translateY(-7px);
+}
+.btn__blue {
+  padding: 0.75em 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  color: white;
+  background-color: #fff;
+  border: none;
+  font-size: 100%;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  background-color: #3085F3;
+}
+.btn__blue__spacing {
+  letter-spacing: 2.5px;
+}
+.btn__blue:hover {
+  transform: translateY(-7px);
+}
+
+.btn__long__spacing {
+  text-transform: uppercase;
+  margin-top: 1em;
+  font-weight: bold;
+  padding: 0.75em 4em 0.75em 4em;
+  min-width: 500px;
+  color: white;
+  background-color: #fff;
+  border: none;
+  font-size: 100%;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  background-color: #3085F3;
+  letter-spacing: 2.5px;
+}
+.btn__long__spacing:hover {
+  transform: translateY(-7px);
+}
+
+.btn__nonBg {
+  padding: 1em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.btn__nonBg:hover {
+  color: #fff;
+  transform: translateY(-7px);
+}
+.btn__nonBg:active {
+  transform: translateY(-1px);
+}
+.btn__nonBg.__spacing {
+  letter-spacing: 2.5px;
+}
+
+.btn__nonBg__spacing {
+  padding: 0.75em 4em 0.75em 4em;
+  min-width: 500px;
+  margin-top: 1em;
+  font-size: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: bold;
+  color: #616467;
+  background-color: transparent;
+  border: #616467;
+  border-width: 2px;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-style: solid;
+  letter-spacing: 2.5px;
+}
+.btn__nonBg__spacing:hover {
+  color: #fff;
+  background-color: #616467;
+  transform: translateY(-7px);
+}
+.btn__nonBg__spacing:active {
+  transform: translateY(-1px);
+}
+
+/*# sourceMappingURL=styles.css.map */

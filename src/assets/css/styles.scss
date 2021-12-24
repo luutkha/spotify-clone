@@ -1,0 +1,19 @@
+@import './base/base';
+
+
+/* responsive */
+
+/*pages*/
+@import './pages/welcome';
+
+
+/*variables*/
+
+@import './variables/variables';
+/* component */
+@import './components/leftMenu';
+@import './components/mainContent';
+@import './components/card';
+@import './components/modal';
+@import './components/form';
+@import './components/button';

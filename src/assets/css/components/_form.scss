@@ -1,0 +1,18 @@
+
+.input-large {
+    min-width: 500px;
+    min-height: 50px;
+    // text-align: center !important;
+    margin: 0 2em 2em 2em;
+
+}
+.form-container {
+    
+    min-width: 500px;    
+    &__label {
+       
+      
+        font-size: 80%;
+        margin-bottom: 0.5em;
+    }
+}

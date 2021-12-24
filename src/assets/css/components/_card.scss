@@ -1,0 +1,60 @@
+.card {
+    padding: 1em 1em 1em 1em;
+    width: 11.5%;
+    min-width: 160px;
+    background-color: $darkStyleColor;
+    float: left;
+    height: 15em;
+    margin: 0.5%;
+   
+    &:hover {
+        background-color: $secondaryDarkColor;
+        position: relative;
+        .btn-circle {
+            width: 40px;
+            height: 40px;
+            z-index: 1;
+            border-radius: 50px;
+            background-color: transparent;
+            background-color: #2ee59d;
+            margin: 0;
+            position: absolute;
+            top: 43%;
+            right: 20%;
+            
+            
+        }
+
+    }
+    &:not(:hover){
+        .btn-circle {
+            width: 40px;
+            height: 40px;
+        
+            border-radius: 50px;
+            background-color: transparent;
+            background-color: #2ee59d;
+            margin: 0;
+            position: absolute;
+            top: 45%;
+            right: 20%;
+            display: none;
+            
+        }
+
+
+    }
+    &__image {
+        width: 90%;
+        margin-bottom: 1em;
+        // padding: 0;
+    }
+    &__description {
+        color: $textSecondColor;
+        font-size: 90%;
+        line-height: 90%;
+        margin-top: 0.5em;
+    }
+}
+
+
