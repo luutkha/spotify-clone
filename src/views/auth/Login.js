@@ -31,7 +31,7 @@ const Login = () => {
                 <div className=''> 
                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
                 <label for="vehicle1" > Remember me </label>
-                <a href='https://accounts.spotify.com/authorize?client_id=aa81c8b08f9847ccb97d12ed03dccd34&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Findex&scope=user-read-playback-state' className='btn__blue' style={{ backgroundColor: '#1DB954', color: 'white' }}>Sign In</a>
+                <a href='https://accounts.spotify.com/authorize?client_id=aa81c8b08f9847ccb97d12ed03dccd34&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fredirect&scope=user-read-playback-state' className='btn__blue' style={{ backgroundColor: '#1DB954', color: 'white' }}>Sign In</a>
 
                 </div>
                 

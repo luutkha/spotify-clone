@@ -1,4 +1,5 @@
 import React from 'react'
+import PlayBar from '../../components/playBar/PlayBar'
 import RecommentList from '../../components/recommentComponent/RecommentList'
 
 const Content = () => {
@@ -6846,7 +6847,9 @@ const Content = () => {
             <RecommentList title="Top 100" listAlbum={raw02.albums.items}/>
             <RecommentList title="Top Viet Nam" listAlbum={raw03.albums.items}/>
             <RecommentList title="Christmas Song" listAlbum={raw04.albums.items}/>
-           
+            <div style={{height:"1450px"}}></div>
+
+
             
         </>
     )

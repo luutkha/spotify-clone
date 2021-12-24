@@ -1,6 +1,5 @@
 import React from 'react'
-import homeIcon from '../assets/image/icon/home.png'
-import playIdcon from '../assets/image/icon/play.png'
+
 const Index = () => {
     return (
         <div style={{ backgroundColor: "black" }}>
@@ -9,17 +8,17 @@ const Index = () => {
                 Launch demo modal
             </button>
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                             {/* <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> */}
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             ...
                         </div>
-                        <div class="modal-footer">
+                        <div className="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary">Save changes</button>
                         </div>

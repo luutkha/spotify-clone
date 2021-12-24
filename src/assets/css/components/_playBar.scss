@@ -1,0 +1,72 @@
+.playBar {
+    height: 100px;
+    width: 100vw;
+    background-color: #181818;
+    z-index: 2000;
+    position: fixed;
+    bottom: 0;
+    color: white;
+}
+.ads {
+    padding: 0.3em 1em 1em 3em;
+    text-align: start;
+    height: 80px;
+    width: 100vw;
+    z-index: 2000;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-image: linear-gradient(
+        to right,
+        #ae2997,
+        #a63ca6,
+        #9c4ab3,
+        #9157be,
+        #8563c8,
+        #7d6cd0,
+        #7574d6,
+        #6c7cdc,
+        #6684e3,
+        #5f8be9,
+        #5893ef,
+        #519af4
+    );
+    display: flex;
+   
+}
+.ads__title {
+    width: 85%;
+
+   
+}
+.btn__ads{
+    
+    padding: 0em 2em 0em 2em;
+    margin-top: 1em;
+    margin-bottom: auto;
+    height: 80%;
+    width: 15%;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    font-size: 100%;
+    border-radius: 45px;
+    // box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    color: #3085F3;
+
+
+
+    
+    &__spacing{
+        letter-spacing: 2.5px;
+        
+
+    }
+    &:hover {
+        transform: translateY(-7px);
+    }
+   
+}
