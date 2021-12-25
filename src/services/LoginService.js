@@ -13,7 +13,7 @@ LoginService.prototype = {
             const refreshToken = resp.data.refresh_token;
             const accessToken = resp.data.access_token
             if (refreshToken) {
-                sessionStorage.setItem("accessToken", refreshToken);
+                sessionStorage.setItem("refreshToken", refreshToken);
                 axios.interceptors.request.use(function (config) {
                     const token = `Bearer ${accessToken}`;
                     // config.headers.token = token;
