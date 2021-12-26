@@ -1,4 +1,5 @@
 import MainLayout from "./layouts/MainLayout";
+import ArtistPlayList from "./views/artist/ArtistPlayList";
 import Login from "./views/auth/Login";
 import RedirectForLogin from "./views/auth/RedirectForLogin";
 import Register from "./views/auth/Register";
@@ -12,6 +13,7 @@ const routes = [
     { path: ["/login"], component: Login, exact: true },
     { path: ["/redirect"], component: RedirectForLogin, exact: true },
     { path: ["/premium"], component: Premium, exact: true },
+    { path: ["/play"], component: ArtistPlayList, exact: true },
         
    
 ];

@@ -1,13 +1,13 @@
-import {  STORE_PROFILE } from "../../constants/constants";
+import {  STORE_PROFILE_ARTIST } from "../../constants/constants";
 
-let initial = {}
+let initial = []
 
 const reducer = (state = initial, action) => {
     let { type, data } = action;
     switch (type) {
-        case STORE_PROFILE:
-
-        return data
+        case STORE_PROFILE_ARTIST:
+            console.log(data)
+            return data
       
         default:
             return state

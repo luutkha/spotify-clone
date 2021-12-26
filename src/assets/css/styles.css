@@ -188,6 +188,7 @@ body {
   position: absolute;
   width: 87%;
   right: 0;
+  padding-top: 5em;
 }
 
 .headerNonLogin {
@@ -206,6 +207,59 @@ body {
 }
 .headerNonLogin .__child {
   z-index: 11;
+}
+
+.headerLogin {
+  left: 0;
+  background-color: #101010 !important;
+  height: 4.5em;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  margin: 0em 0em 1em 1em;
+  padding: 1em 1em 1em 1em;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-around;
+}
+.headerLogin__child {
+  z-index: 1;
+  flex: 1;
+  text-align: center;
+  right: 0;
+}
+.headerLogin__child2 {
+  z-index: 2;
+  flex: 1;
+  margin-left: 15em;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.loading__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(7px);
+}
+
+.loading__spinner {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: calc(52% - 8rem);
 }
 
 .card {
@@ -249,12 +303,87 @@ body {
   width: 94%;
   margin: 1em auto 0.5em auto;
 }
+.card__image__circle {
+  width: 150px;
+  height: 150px;
+  margin: 1em auto 0.5em auto;
+  border-radius: 50%;
+}
 .card__description {
   color: #B3B3B3;
   font-size: 90%;
   line-height: 115%;
   margin: 0.5em 0em 0.5em 0em;
   padding: 0em 0em 1px 0em;
+}
+
+.cardCircle {
+  padding: 0.5em 1em 1em 1em;
+  width: 11.5%;
+  min-width: 180px;
+  background-color: #121212;
+  float: left;
+  min-height: 17em;
+  margin: 1em 0.5% 1em 0.5%;
+}
+.cardCircle:hover {
+  background-color: #282828;
+  position: relative;
+}
+.cardCircle:hover .btn-circle {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  border-radius: 50px;
+  background-color: transparent;
+  background-color: #2ee59d;
+  margin: 0;
+  position: absolute;
+  top: 53%;
+  right: 20%;
+}
+.cardCircle:not(:hover) .btn-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: transparent;
+  background-color: #2ee59d;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  display: none;
+}
+.cardCircle__image {
+  width: 94%;
+  margin: 1em auto 0.5em auto;
+}
+.cardCircle__image__circle {
+  position: relative;
+  width: 94% px;
+  height: 94% px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.cardCircle__description {
+  color: #B3B3B3;
+  font-size: 90%;
+  line-height: 115%;
+  margin: 0.5em 0em 0.5em 0em;
+  padding: 0em 0em 1px 0em;
+}
+
+.circular__portrait {
+  position: relative;
+  width: 94% px;
+  height: 94% px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular__portrait img {
+  width: 100%;
+  height: auto;
 }
 
 .input-large {
@@ -269,6 +398,13 @@ body {
 .form-container__label {
   font-size: 80%;
   margin-bottom: 0.5em;
+}
+
+.input__radius {
+  border-radius: 50px;
+  width: 25em;
+  font-size: 15px;
+  padding: 0.5em 0.5em 0.5em 2em;
 }
 
 .btn__primary {
@@ -411,7 +547,7 @@ body {
 .playBar {
   height: 100px;
   width: 100vw;
-  background-color: #181818;
+  background-color: white;
   z-index: 2000;
   position: fixed;
   bottom: 0;

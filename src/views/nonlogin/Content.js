@@ -6843,10 +6843,10 @@ const Content = () => {
     }
     return (
         <>
-            <RecommentList title="New releases" listAlbum={raw01.albums.items}/>
-            <RecommentList title="Top 100" listAlbum={raw02.albums.items}/>
-            <RecommentList title="Top Viet Nam" listAlbum={raw03.albums.items}/>
-            <RecommentList title="Christmas Song" listAlbum={raw04.albums.items}/>
+            <RecommentList title="New releases" list={raw01.albums.items} type="album" />
+            <RecommentList title="Top 100" list={raw02.albums.items} type="album"/>
+            <RecommentList title="Top Viet Nam" list={raw03.albums.items} type="album"/>
+            <RecommentList title="Christmas Song" list={raw04.albums.items} type="album"/>
             <div style={{height:"1450px"}}></div>
 
             

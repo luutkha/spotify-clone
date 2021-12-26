@@ -1,17 +1,17 @@
 import React from 'react'
 import RecommentCard from './RecommentCard'
 
-const RecommentList = ({title,listAlbum}) => {
+const RecommentList = ({title,list,type}) => {
     
-    const listAlbumExport = listAlbum.map((album,index) =>{
+    const listExport = list.map((object,index) =>{
         return (
-            <RecommentCard key={index} album={album}/>
+            <RecommentCard key={index} object={object} type={type}/>
         )
     })
     return (
         <div className=''> 
-            <strong className='recommentTitle'>{title}</strong><br></br>
-            {listAlbumExport}
+            <strong className=' recommentTitle' >{title}</strong><br></br>
+            {listExport}
         </div>
     )
 }
