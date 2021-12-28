@@ -52,11 +52,13 @@
     z-index: 2;
     flex:1;
     margin-left: 15em;    
+  }
 
-    
-    
+  img{
+    // max-width: 20px;
+    border-radius: 50%;
+    position: relative; max-width: 94px; max-height: 94px; overflow: hidden; border-radius: 500x;
 
-    
   }
   
 

@@ -236,6 +236,14 @@ body {
   flex: 1;
   margin-left: 15em;
 }
+.headerLogin img {
+  border-radius: 50%;
+  position: relative;
+  max-width: 94px;
+  max-height: 94px;
+  overflow: hidden;
+  border-radius: 500x;
+}
 
 .loading {
   position: absolute;
@@ -405,6 +413,9 @@ body {
   width: 25em;
   font-size: 15px;
   padding: 0.5em 0.5em 0.5em 2em;
+}
+.input__radius:focus {
+  border: 0;
 }
 
 .btn__primary {
