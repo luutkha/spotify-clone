@@ -6,6 +6,7 @@ const RecommentCard = ({ object, type }) => {
     const dispatch = useDispatch()
     
     const [isPlay, setisPlay] = useState(false)
+    
     const trackPlayOncLick = () =>{
         if(isPlay===true) {
             setisPlay(false)

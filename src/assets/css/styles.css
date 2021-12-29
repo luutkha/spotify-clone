@@ -295,7 +295,7 @@ body {
 .card {
   padding: 0.5em 1em 1em 1em;
   width: 11.5%;
-  min-width: 160px;
+  min-width: 180px;
   background-color: #121212;
   float: left;
   min-height: 17em;
@@ -419,7 +419,7 @@ body {
 .card-matchest {
   padding: 0.5em 1em 1em 1em;
   width: 100%;
-  min-width: 160px;
+  min-width: 180px;
   background-color: #121212;
   float: left;
   height: 240px;
@@ -737,6 +737,91 @@ body {
 }
 .btn__ads:hover {
   transform: translateY(-7px);
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(calc(100% + 35px));
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+.toast-custom, .toast--warning, .toast--success, .toast--info {
+  animation: slideLeft ease 0.3s, fadeOut linear 1s 3s forwards;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  color: black;
+  text-align: left;
+  min-height: 100px;
+  min-width: 500px;
+  max-width: 500px;
+  z-index: 9999;
+  margin: 2em;
+  border-left: 5px solid;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+}
+.toast-custom:hover, .toast--warning:hover, .toast--success:hover, .toast--info:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+.toast-custom__icon, .toast--warning__icon, .toast--success__icon, .toast--info__icon {
+  color: #47D764;
+  font-size: 25px;
+  margin: auto;
+  padding-left: 15px;
+}
+.toast-custom__icon--close {
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+  margin: auto;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.toast-custom__icon--close:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+.toast-custom__body {
+  padding: 10px 20px;
+  flex-grow: 1;
+}
+.toast-custom__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.toast-custom__content {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.toast--info {
+  border-color: #2F86EB;
+}
+.toast--info__icon {
+  color: #2F86EB;
+}
+
+.toast--success {
+  border-color: #47D764;
+}
+.toast--success__icon {
+  color: #47D764;
+}
+
+.toast--warning {
+  border-color: #ffc021;
+}
+.toast--warning__icon {
+  color: #ffc021;
 }
 
 /*# sourceMappingURL=styles.css.map */

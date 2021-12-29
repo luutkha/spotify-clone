@@ -2,29 +2,41 @@ import React from 'react'
 
 const Index = () => {
     return (
-        <div style={{ backgroundColor: "black" }}>
+        <div style={{ backgroundColor: "white" ,color:"black", height:"1000px" }}>
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal
-            </button>
+           <div className="toast--info">
+               <div className="toast--info__icon">
+               <i class="fas fa-check-circle"></i>
+               </div>
+               <div className="toast-custom__body">
+                   <div className="toast-custom__title">Title</div>
+                   <div className="toast-custom__content">Worked on </div>
+               </div>
+               <div className="toast-custom__icon--close"><i class="fas fa-times"></i></div>
+           </div>
 
-            <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            {/* <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> */}
-                        </div>
-                        <div className="modal-body">
-                            ...
-                        </div>
-                        <div className="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           {/* <div className="toast--success">
+               <div className="toast--success__icon">
+               <i class="fas fa-check-circle"></i>
+               </div>
+               <div className="toast-custom__body">
+                   <div className="toast-custom__title">Title</div>
+                   <div className="toast-custom__content">Worked on </div>
+               </div>
+               <div className="toast-custom__icon--close"><i class="fas fa-times"></i></div>
+           </div>
+
+           <div className="toast--warning">
+               <div className="toast--warning__icon">
+               <i class="fas fa-check-circle"></i>
+               </div>
+               <div className="toast-custom__body">
+                   <div className="toast-custom__title">Title</div>
+                   <div className="toast-custom__content">Worked on </div>
+               </div>
+               <div className="toast-custom__icon--close"><i class="fas fa-times"></i></div>
+           </div> */}
+
 
         </div>
     )

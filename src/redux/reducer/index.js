@@ -3,6 +3,7 @@ import { combineReducers } from "redux";
 import authentication from "./returnObject/authentication";
 import profile from "./returnObject/profile";
 import myArtist from "./returnArray/myArtist"
+import myTracks from "./returnArray/myTracks"
 import listArtistWhenSearch from "./returnArray/listArtistWhenSearch"
 import listAlbumWhenSearch from "./returnArray/listAlbumWhenSearch"
 import listTrackWhenSearch from "./returnArray/listTrackWhenSearch"
@@ -12,6 +13,7 @@ const reducer = combineReducers({
     authentication,
     profile,
     myArtist,
+    myTracks,
     listArtistWhenSearch,
     listAlbumWhenSearch,
     listTrackWhenSearch,

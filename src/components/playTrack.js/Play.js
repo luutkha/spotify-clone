@@ -7,7 +7,7 @@ const Play = () => {
     const authentication = useSelector(state => state.authentication)
     const playDetail = useSelector(state => state.selectedTrack)
     console.log(playDetail)
-    if (!authentication.user.access_token) return <div>Error when loading player</div>;
+    if (!authentication.user.access_token) return <div>Error when loading player. Please refresh page</div>;
     const closePlayBar = () =>{
         dispatch(setSelectedTrack(playDetail.uris,false))
     }
