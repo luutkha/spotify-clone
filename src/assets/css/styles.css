@@ -245,6 +245,28 @@ body {
   border-radius: 500x;
 }
 
+.matches-result {
+  display: flex;
+  text-align: left;
+  padding: 2em 0 0 0;
+}
+.matches-result__title {
+  font-size: 25px;
+  font-weight: 900;
+  margin-left: 0.5em;
+}
+.matches-result__child {
+  margin-left: 0.5em;
+  flex: 2;
+}
+.matches-result__child-type2 {
+  margin-left: 5em;
+  flex: 5;
+}
+.matches-result__child-type2__card-container {
+  margin-top: 2em;
+}
+
 .loading {
   position: absolute;
   top: 0;
@@ -289,10 +311,10 @@ body {
   z-index: 1;
   border-radius: 50px;
   background-color: transparent;
-  background-color: #2ee59d;
+  background-color: #1db954;
   margin: 0;
   position: absolute;
-  top: 43%;
+  top: 44%;
   right: 20%;
 }
 .card:not(:hover) .btn-circle {
@@ -300,7 +322,7 @@ body {
   height: 40px;
   border-radius: 50px;
   background-color: transparent;
-  background-color: #2ee59d;
+  background-color: #1db954;
   margin: 0;
   position: absolute;
   top: 45%;
@@ -344,7 +366,7 @@ body {
   z-index: 1;
   border-radius: 50px;
   background-color: transparent;
-  background-color: #2ee59d;
+  background-color: #1db954;
   margin: 0;
   position: absolute;
   top: 53%;
@@ -355,7 +377,7 @@ body {
   height: 40px;
   border-radius: 50px;
   background-color: transparent;
-  background-color: #2ee59d;
+  background-color: #1db954;
   margin: 0;
   position: absolute;
   top: 45%;
@@ -368,8 +390,8 @@ body {
 }
 .cardCircle__image__circle {
   position: relative;
-  width: 94% px;
-  height: 94% px;
+  width: 90%;
+  height: 90%;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -392,6 +414,116 @@ body {
 .circular__portrait img {
   width: 100%;
   height: auto;
+}
+
+.card-matchest {
+  padding: 0.5em 1em 1em 1em;
+  width: 100%;
+  min-width: 160px;
+  background-color: #121212;
+  float: left;
+  height: 240px;
+  margin: 1.5em 5% 1em 0.5%;
+  display: flex;
+  flex-direction: column;
+}
+.card-matchest__title {
+  font-size: 27px;
+  font-weight: 900;
+}
+.card-matchest:hover {
+  background-color: #282828;
+  position: relative;
+}
+.card-matchest:hover .btn-circle {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  border-radius: 50px;
+  background-color: transparent;
+  background-color: #1db954;
+  margin: 0;
+  position: absolute;
+  bottom: 6%;
+  right: 4%;
+}
+.card-matchest:not(:hover) .btn-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: transparent;
+  background-color: #1db954;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  display: none;
+}
+.card-matchest__image__circle {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 50%;
+}
+.card-matchest__description {
+  color: #B3B3B3;
+  font-size: 90%;
+  line-height: 115%;
+  margin: 0.5em 0em 0.5em 0em;
+  padding: 0em 0em 1px 0em;
+}
+
+.card-tracks-matchest {
+  padding: 0.5em 1em 1em 1em;
+  width: 100%;
+  min-width: 160px;
+  background-color: #121212;
+  float: left;
+  height: 60px;
+  display: flex;
+}
+.card-tracks-matchest__title {
+  font-size: 15px;
+  font-weight: 900;
+  padding: 0em 0.5em 1px 1em;
+}
+.card-tracks-matchest:hover {
+  background-color: #282828;
+  position: relative;
+}
+.card-tracks-matchest:hover .btn-circle {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  background-color: transparent;
+  margin: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 1em;
+}
+.card-tracks-matchest:not(:hover) .btn-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: transparent;
+  background-color: #1db954;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  display: none;
+}
+.card-tracks-matchest__image-container__img {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 5px;
+}
+.card-tracks-matchest__description {
+  color: #B3B3B3;
+  font-size: 12px;
+  line-height: 115%;
+  padding: 0em 0.5em 1px 1.25em;
 }
 
 .input-large {
@@ -558,11 +690,13 @@ body {
 .playBar {
   height: 100px;
   width: 100vw;
-  background-color: white;
+  background-color: #121212;
   z-index: 2000;
   position: fixed;
   bottom: 0;
   color: white;
+  padding-left: 1em;
+  padding-right: 4em;
 }
 
 .ads {

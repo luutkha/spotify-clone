@@ -7,16 +7,15 @@ const LoggedInContent = ({ queryForSearch }) => {
 
     const dispatch = useDispatch()
     const myListArtist = useSelector(state => state.myArtist)
-    const profile = useSelector(state => state.profile)
     
     useEffect(() => {
         dispatch(getMyListArtist())
 
     }, [dispatch])
     return (
-        <>
+        <div style={{minHeight:'1700px'}}>
             {queryForSearch !== "" ? <SearchResult queryForSearch={queryForSearch}/> : <div><RecommentList title="Your Artist" list={myListArtist} type="artist" /></div>}
-        </>
+        </div>
     )
 }
 

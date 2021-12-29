@@ -1,11 +1,13 @@
 .playBar {
     height: 100px;
     width: 100vw;
-    background-color: white;
+    background-color: #121212;
     z-index: 2000;
     position: fixed;
     bottom: 0;
     color: white;
+    padding-left: 1em;
+    padding-right: 4em;
 }
 .ads {
     padding: 0.3em 1em 1em 3em;

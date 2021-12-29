@@ -6,7 +6,7 @@ const reducer = (state = initial, action) => {
     let { type, data } = action;
     switch (type) {
         case STORE_PROFILE_ARTIST:
-            console.log(data)
+            
             return data
       
         default:

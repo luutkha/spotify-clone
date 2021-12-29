@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getUserInfo } from '../../redux/action/actProfile'
 
@@ -9,12 +8,12 @@ const HeaderLogged = ({onChange}) => {
   
     useEffect(() => {
         dispatch(getUserInfo())
-    }, [])
+    }, [dispatch])
  
     return (
         <div>
             <div className='headerLogin'>
-                <div class="headerLogin__child2">
+                <div className="headerLogin__child2">
                     <input className='input__radius' onChange={(event) => onChange(event.target.value)} placeholder="Enter artist, track & album" />
                 </div>
                 <div className='headerLogin__child' style={{ width: "15px" }}></div>

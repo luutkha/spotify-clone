@@ -7,7 +7,7 @@ export const getUserInfo = () => {
         const user_info = await axios
             .get(API_ME)
             .then((resp) => {
-                console.log(resp.data)
+               
 
                 return resp.data;
             })
