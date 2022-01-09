@@ -10,7 +10,6 @@ const TrackList = ({list,type}) => {
     })
     return (
         <div className=''> 
-           
             {list.length > 0 && listExport}
         </div>
     )

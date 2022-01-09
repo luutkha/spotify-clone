@@ -10,7 +10,8 @@ import {
 import { API_GET_TOKEN, API_ME, } from "../constants/api";
 import LoginService from "../../services/LoginService";
 import axios from "axios";
-import { getMyListArtist } from "./actArtist";
+import qs from 'qs';
+
 
 export const storePhoneAndPasswordWhenLogin = (key, value) => {
     //key and value was created to save a dynamic object
@@ -54,7 +55,16 @@ const headers = {
     'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
     'Authorization': 'basic YWE4MWM4YjA4Zjk4NDdjY2I5N2QxMmVkMDNkY2NkMzQ6Zjk0MjViZDc0YWJlNDBhYWJiODU1ZGQwZDk1MmE0ZDY='
 };
-export const getTokenWhenRefreshPage = (data) => {
+
+export const getTokenWhenRefreshPage = () => {
+    let refreshToken = sessionStorage.getItem('refreshToken')
+    let data = qs.stringify({
+
+        "grant_type": "refresh_token",
+        "refresh_token": refreshToken,
+        "client_id": "aa81c8b08f9847ccb97d12ed03dccd34",
+
+    })
     return async (dispatch) => {
         await axios
             .post(API_GET_TOKEN, data, { headers: headers })
@@ -72,7 +82,7 @@ export const getTokenWhenRefreshPage = (data) => {
                     type: LOGIN_SUCCESSFUL,
                     user: resp.data
                 })
-             
+
 
 
                 return resp.data;

@@ -6,7 +6,6 @@ const reducer = (state = initial, action) => {
     let { type, data } = action;
     switch (type) {
         case STORE_LIST_ALBUM:
-            // console.log(data)
             return [...data]
       
         default:

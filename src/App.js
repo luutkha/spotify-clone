@@ -4,8 +4,9 @@ import "./assets/css/styles.css";
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { getTokenWhenRefreshPage } from "./redux/action/actLogin";
-import qs from 'qs';
 import Loading from "./components/else/Loading";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const maproutes = routes.map((route, index) => {
   return (
@@ -18,34 +19,28 @@ const maproutes = routes.map((route, index) => {
   );
 });
 
-let refreshToken = sessionStorage.getItem('refreshToken')
 
 function App() {
 
   const dispatch = useDispatch()
-  let data = qs.stringify({
-
-    "grant_type": "refresh_token",
-    "refresh_token": refreshToken,
-    "client_id": "aa81c8b08f9847ccb97d12ed03dccd34",
-
-  })
+  
   const [isLoading, setisLoading] = useState(true)
   useEffect(() => {
-    dispatch(getTokenWhenRefreshPage(data))
+    dispatch(getTokenWhenRefreshPage())
       .then(() => {
         setisLoading(false)
       })
 
 
 
-  }, [dispatch, data])
+  }, [dispatch])
   return (
     <Router>
 
       <div className="App">
 
         {isLoading && <Loading />}
+        <ToastContainer />
         <Switch>{maproutes}</Switch>
 
       </div>

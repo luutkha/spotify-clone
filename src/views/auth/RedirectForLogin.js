@@ -12,6 +12,9 @@ const RedirectForLogin = () => {
     const code = new URLSearchParams(search).get('code');
     const authentication = useSelector(state => state.authentication)
     console.log(code)
+
+
+    
     let data = qs.stringify({
         "code": code,
         "grant_type": "authorization_code",

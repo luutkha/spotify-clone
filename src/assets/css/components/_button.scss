@@ -13,16 +13,14 @@
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    text-decoration: none;
     &:hover {
-        background-color: #2ee59d;
-        //  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        background-color: #1db954;
         color: #fff;
         transform: translateY(-7px);
     }
 
-    &:active {
-        // transform: translateY(-1px);
-    }
+   
 }
 .btn__blue{
     
@@ -35,7 +33,6 @@
     border: none;
     font-size: 100%;
     border-radius: 45px;
-    // box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
@@ -57,7 +54,6 @@
     text-transform: uppercase;
 
     margin-top: 1em;
-    // margin-bottom: 1em;
     font-weight: bold;
     padding:0.75em 4em 0.75em 4em;
     min-width: 500px;
@@ -66,7 +62,6 @@
     border: none;
     font-size: 100%;
     border-radius: 45px;
-    // box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
@@ -96,8 +91,7 @@
     cursor: pointer;
     outline: none;
     &:hover {
-        // background-color: #2ee59d;
-        //  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+      
         color: #fff;
         transform: translateY(-7px);
     }
@@ -115,8 +109,6 @@
     padding:0.75em 4em 0.75em 4em;
     min-width: 500px;
     margin-top: 1em;
-    // margin-bottom: 1em;
-
     font-size: 100%;
     text-transform: uppercase;
     letter-spacing: 2.5px;
@@ -126,15 +118,11 @@
     border: #616467 ;
     border-width: 2px;
     border-radius: 45px;
-    // box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
-    // outline: none;
     border-style: solid ;
     letter-spacing: 2.5px;
     &:hover {
-        // background-color: #2ee59d;
-        //  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
         color: #fff;
         background-color: #616467;
         transform: translateY(-7px);
@@ -152,15 +140,14 @@
 .btn__blue__nonPadding{
     
     padding: 0.75em 2em;
-    // margin-top: 1em;
-    // margin-bottom: 1em;
+   
     font-weight: bold;
     color: white;
     background-color: #fff;
     border: none;
     font-size: 100%;
     border-radius: 45px;
-    // box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+ 
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
@@ -176,4 +163,21 @@
         transform: translateY(-7px);
     }
    
+}
+
+.btn {
+    
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 13px;
+    border-radius: 100px;
+    transition: all 0.3s ease 0s;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    &:hover{
+        transform: translateY(-7px);
+        color: white;
+
+    }
 }

@@ -23,10 +23,10 @@
 
 
 .toast-custom {
-    animation: slideLeft ease .3s, fadeOut linear 1s 3s forwards;
+    // animation: slideLeft ease .3s, fadeOut linear 1s 3s forwards;
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 70%;
+    // bottom: 100%;
     background-color: white;
     color: black;
     text-align: left;
@@ -62,7 +62,7 @@
     }
    
     &__body{
-        padding: 10px 20px;
+        padding: 0px 20px;
         flex-grow: 1;
     }
     &__title {
@@ -98,5 +98,14 @@
     &__icon{
         @extend .toast-custom__icon;
         color: #ffc021;
+    }
+}
+
+.toast--danger{
+    @extend .toast-custom;
+    border-color: red;
+    &__icon{
+        @extend .toast-custom__icon;
+        color: red;
     }
 }

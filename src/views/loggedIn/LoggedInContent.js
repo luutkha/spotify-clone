@@ -17,8 +17,8 @@ const LoggedInContent = ({ queryForSearch }) => {
     }, [dispatch])
     return (
         <div style={{minHeight:'1700px'}}>
-            {queryForSearch !== "" ? <SearchResult queryForSearch={queryForSearch}/> : <div><RecommentList title="Your Artist" list={myListArtist} type="artist" /></div>}
-            {queryForSearch !== "" ? <SearchResult queryForSearch={queryForSearch}/> : <div><RecommentList title="Your Tracks" list={myListTracks} type="album" /></div>}
+            {queryForSearch !== "" ? <SearchResult queryForSearch={queryForSearch}/> : <div><RecommentList title="Your Artist" list={myListArtist} type="artist" /><RecommentList title="Your Tracks" list={myListTracks} type="album" /></div>}
+            
         </div>
     )
 }
